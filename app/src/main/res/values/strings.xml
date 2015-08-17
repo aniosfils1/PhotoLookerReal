@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PhotoLooker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="zxv">asd</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_photos">PhotosActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="action_settings"> Filters </string>
+    <string name="search_prompt">Enter search  query</string>
+    <string name="save_label">Search</string>
+    <string name="image_title_label">Image Title</string>
+    <string name="title_activity_image_display">Full Image</string>
+</resources>

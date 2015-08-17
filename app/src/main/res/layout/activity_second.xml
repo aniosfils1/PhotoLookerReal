@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myfirst.photolooker.SecondActivity"
+    android:background="#649c17ff">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iView1"
+        android:background="@drawable/searchimage"
+        style="@android:style/Animation.Translucent"
+        android:backgroundTint="#ff5b0eff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iView2"
+        android:background="@drawable/popularimage"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="#645083ff"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/iView1"
+        android:layout_toEndOf="@+id/iView1"
+        android:layout_marginTop="48dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iView3"
+        android:background="@drawable/mapimage"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="#64395bff"
+        android:clickable="true"
+        android:baselineAlignBottom="true"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/iView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Photos"
+        android:id="@+id/textView2"
+        android:textColor="#ffc70eff"
+        android:theme="@android:style/Animation.Dialog"
+        android:textSize="20dp"
+        android:layout_below="@+id/iView1"
+        android:layout_alignLeft="@+id/iView1"
+        android:layout_alignStart="@+id/iView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Photos on IG"
+        android:id="@+id/textView3"
+        android:textColor="#ffc70eff"
+        android:textSize="20dp"
+        android:layout_below="@+id/iView2"
+        android:layout_alignRight="@+id/iView3"
+        android:layout_alignEnd="@+id/iView3"
+        android:layout_marginRight="53dp"
+        android:layout_marginEnd="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       Map"
+        android:id="@+id/textView4"
+        android:layout_alignLeft="@+id/iView3"
+        android:layout_alignStart="@+id/iView3"
+        android:layout_below="@+id/iView3"
+        android:layout_alignRight="@+id/iView3"
+        android:layout_alignEnd="@+id/iView3"
+        android:textColor="#ffd00bff"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About us"
+        android:id="@+id/aboutusbutton"
+        android:onClick="AboutUsActivity"
+        android:background="#ffff2dd8"
+        android:textColor="#ff2354ff"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

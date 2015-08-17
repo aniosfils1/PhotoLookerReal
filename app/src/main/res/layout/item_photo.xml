@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/ivUserPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="#CCC"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivUserPic"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ivUserPic"
+        android:layout_toRightOf="@+id/ivUserPic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Username"
+        android:textColor="#ff283596"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/ivLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUsername"
+        android:layout_below="@+id/tvUsername"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="20dp"
+        android:src="@drawable/location"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivLocation"
+        android:layout_alignTop="@+id/ivLocation"
+        android:layout_toEndOf="@+id/ivLocation"
+        android:layout_toRightOf="@+id/ivLocation"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="New York, City"
+        android:textColor="#333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvCreatedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/tvUsername"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvUsername"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="2days ago"
+        android:textColor="#ff454f68"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ivUserPic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Caption - Simply place an appropriate Resources..."
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvCaption"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="#CCC"
+        android:minHeight="150dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tvLikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ivPhoto"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:text="♥ 12,345 likes"
+        android:textColor="#7130a9"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvCommentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/tvLikeCount"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvLikeCount"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="390 comments"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/ivComment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLikeCount"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="#CCC"
+        android:maxHeight="35dp"
+        android:maxWidth="35dp"
+        android:minHeight="35dp"
+        android:minWidth="35dp" />
+
+    <TextView
+        android:id="@+id/tvComment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivComment1"
+        android:layout_alignTop="@+id/ivComment1"
+        android:layout_toEndOf="@+id/ivComment1"
+        android:layout_toRightOf="@+id/ivComment1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:text="Comment1 - PrettyTime..."
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivComment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ivComment1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="#CCC"
+        android:maxHeight="35dp"
+        android:maxWidth="35dp"
+        android:minHeight="35dp"
+        android:minWidth="35dp" />
+
+    <TextView
+        android:id="@+id/tvComment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivComment2"
+        android:layout_alignTop="@+id/ivComment2"
+        android:layout_toEndOf="@+id/ivComment2"
+        android:layout_toRightOf="@+id/ivComment2"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:text="Comment2 - Set the desired Locale..."
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+</RelativeLayout>
